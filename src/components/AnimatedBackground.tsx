@@ -23,12 +23,9 @@ interface Gradient {
 
 export function AnimatedBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [particles, setParticles] = useState<Particle[]>([]);
-  const [gradients, setGradients] = useState<Gradient[]>([]);
-  const animationIdRef = useRef<number>();
   const particlesRef = useRef<Particle[]>([]);
   const gradientsRef = useRef<Gradient[]>([]);
-  const connectionLineTimeoutRef = useRef<NodeJS.Timeout>();
+  // const connectionLineTimeoutRef = useRef<NodeJS.Timeout>();
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
 
@@ -93,7 +90,6 @@ export function AnimatedBackground() {
       });
     }
     particlesRef.current = newParticles;
-    setParticles(newParticles);
 
     // Initialize gradients for mesh
     const newGradients: Gradient[] = [
@@ -120,7 +116,6 @@ export function AnimatedBackground() {
       },
     ];
     gradientsRef.current = newGradients;
-    setGradients(newGradients);
 
     let animationFrameId: number;
     let lineConnectionTime = 0;
@@ -135,7 +130,7 @@ export function AnimatedBackground() {
 
       // Update and draw particles
       const particles = particlesRef.current;
-      particles.forEach((p, i) => {
+      particles.forEach((p) => {
         p.x += p.vx;
         p.y += p.vy;
 

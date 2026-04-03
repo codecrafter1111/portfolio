@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { ThemeToggle } from './ThemeToggle';
+// import { ThemeToggle } from './ThemeToggle';
 
 interface NavigationProps {
   scrollToSection: (sectionId: string) => void;
