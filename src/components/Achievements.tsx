@@ -95,7 +95,7 @@ function AchievementCard({ achievement, index }: { achievement: Achievement; ind
           </p>
 
           {/* Hover indicator */}
-          <Link href={`/achievenents?id=${achievement.id}`}>
+          <Link href={`/achievements?id=${achievement.id}`}>
             <motion.div
               className="flex items-center gap-2 text-cyan-400 dark:text-cyan-400 light:text-blue-600 text-sm font-semibold opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer"
               initial={{ x: -10 }}

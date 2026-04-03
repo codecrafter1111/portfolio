@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 
 interface Project {
   id: number;
@@ -64,40 +63,7 @@ const FALLBACK_PROJECTS: Project[] = [
 ];
 
 export function Projects() {
-  const [projects, setProjects] = useState<Project[]>(FALLBACK_PROJECTS);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await fetch('/resume-data.json');
-        if (!response.ok) throw new Error('Failed to fetch');
-        const data = await response.json();
-        if (data.projects && data.projects.length > 0) {
-          setProjects(data.projects);
-        } else {
-          setProjects(FALLBACK_PROJECTS);
-        }
-      } catch (error) {
-        console.error('Error fetching projects:', error);
-        setProjects(FALLBACK_PROJECTS);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProjects();
-  }, []);
-
-  if (loading) {
-    return (
-      <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="h-96 bg-gradient-to-r from-gray-900/50 to-gray-900/20 rounded-xl animate-pulse" />
-        </div>
-      </section>
-    );
-  }
+  const projects = FALLBACK_PROJECTS;
 
   return (
     <section id="projects" className="relative py-20 px-4 sm:px-6 lg:px-8">
