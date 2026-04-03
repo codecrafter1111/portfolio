@@ -1,0 +1,15 @@
+export { AnimatedBackground } from './AnimatedBackground';
+export { SplashScreen } from './SplashScreen';
+export { Navigation } from './Navigation';
+export { ThemeToggle } from './ThemeToggle';
+export { Hero } from './Hero';
+export { Experience } from './Experience';
+export { Projects } from './Projects';
+export { ProjectCard } from './ProjectCard';
+export { ProjectGrid } from './ProjectGrid';
+export { ProjectShowcase } from './ProjectShowcase';
+export { Achievements } from './Achievements';
+export { Skills } from './Skills';
+export { Education } from './Education';
+export { Contact } from './Contact';
+export { Footer } from './Footer';

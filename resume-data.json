@@ -1,0 +1,131 @@
+{
+  "basics": {
+    "name": "Prabhat Yadav",
+    "title": "MERN Developer | Node.js | Express.js | MongoDB | React.js",
+    "summary": "I am a MERN Stack Developer experienced in building scalable and responsive web applications using MongoDB, Express.js, React, and Node.js. I work with TypeScript to write clean, maintainable code and use Tailwind CSS to create modern, user-friendly interfaces. My experience includes developing RESTful APIs, implementing authentication, managing databases with MongoDB, and integrating frontend and backend systems. I also have basic experience with React Native for mobile app development and API integration.",
+    "location": "Dehradun, Uttarakhand, India",
+    "email": "codecrafter432@gmail.com",
+    "alternateEmail": "kprabhat1585@gmail.com",
+    "phone": "Mobile",
+    "links": {
+      "linkedin": "www.linkedin.com/in/prabhatyadav-0b1222334"
+    }
+  },
+  "topSkills": [
+    "Responsive Web Design",
+    "Scalable Web Applications",
+    "Sales Tracking"
+  ],
+  "skills": {
+    "frontend": ["React", "React.js", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "React Native (Basic)"],
+    "backend": ["Node.js", "Express.js", "MongoDB"],
+    "tools": ["Git", "Multer", "Redis"],
+    "fullStack": ["MERN Stack"]
+  },
+  "experience": [
+    {
+      "company": "Not specified in resume",
+      "role": "Not specified in resume",
+      "dates": "Not specified in resume",
+      "location": "Not specified in resume",
+      "bullets": []
+    }
+  ],
+  "achievements": [
+    {
+      "type": "award",
+      "title": "Winner of TechFusion Hackathon",
+      "context": "Hackathon competition"
+    },
+    {
+      "type": "award",
+      "title": "Appathon | The Art of Web",
+      "context": "Web development competition"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Veer Madho Singh Bhandari Uttarakhand Technical University (UTU)",
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science & Engineering (CSE)",
+      "startDate": "August 2024",
+      "endDate": "June 2028"
+    },
+    {
+      "institution": "Tula's Institute",
+      "degree": "Bachelor of Technology",
+      "field": "Computer Engineering",
+      "startDate": "July 2024",
+      "endDate": "June 2028"
+    },
+    {
+      "institution": "Gyanti Devi balika inter college",
+      "degree": "12th",
+      "startDate": "April 2023",
+      "endDate": "February 2024"
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Airbnb Clone",
+      "shortDescription": "Full-stack Airbnb-inspired booking platform with listings, authentication, and image hosting",
+      "description": "Built a full-stack Airbnb clone with property listing flows, authentication middleware, cloud image handling, and server-side rendered views. The project includes backend route/controller architecture, schema validation, and listing management features.",
+      "technologies": ["Node.js", "Express", "MongoDB", "EJS", "JavaScript", "CSS", "Cloudinary"],
+      "features": [
+        "Property listing creation and management",
+        "Authentication and protected routes",
+        "MVC-style backend structure (controllers, routers, models)",
+        "Cloud image upload integration",
+        "Template-rendered UI with EJS",
+        "Validation with schema and middleware",
+        "Responsive listing pages"
+      ],
+      "liveLink": "",
+      "githubLink": "https://github.com/codecrafter1111/Airbnb-clone",
+      "imageUrl": "https://opengraph.githubassets.com/1/codecrafter1111/Airbnb-clone"
+    },
+    {
+      "id": 2,
+      "title": "Automated Attendance",
+      "shortDescription": "Modern React attendance application with dashboard UI and responsive workflow",
+      "description": "Developed an attendance-focused frontend application using React and Vite with modern tooling. The project emphasizes responsive UI, organized component structure, and scalable frontend architecture for attendance management workflows.",
+      "technologies": ["React", "Vite", "JavaScript", "Tailwind CSS", "Redux Toolkit", "Framer Motion"],
+      "features": [
+        "Attendance-centric interface and flows",
+        "Responsive UI built with Tailwind CSS",
+        "Modern React component architecture",
+        "Fast dev/build with Vite",
+        "Routing-ready structure for scalable screens",
+        "Animation-friendly UX patterns",
+        "Production build setup"
+      ],
+      "liveLink": "",
+      "githubLink": "https://github.com/codecrafter1111/Automated-Attendance",
+      "imageUrl": "https://opengraph.githubassets.com/1/codecrafter1111/Automated-Attendance"
+    },
+    {
+      "id": 3,
+      "title": "Admin Deskboard",
+      "shortDescription": "Feature-rich admin dashboard for orders, sales analytics, and product/client management",
+      "description": "Built a feature-rich admin dashboard to monitor orders, track product sales, manage client data, and add new products. Implemented interactive chart visualizations and real-time style dashboard updates with a responsive interface.",
+      "technologies": ["React", "Vite", "JavaScript", "CSS", "Charting Libraries"],
+      "features": [
+        "Admin panel for product and client management",
+        "Order monitoring dashboard",
+        "Sales tracking and analytics views",
+        "Interactive graph and pie chart visualizations",
+        "Clean, responsive dashboard layout",
+        "CRUD-friendly management workflows",
+        "Scalable React component structure"
+      ],
+      "liveLink": "",
+      "githubLink": "https://github.com/codecrafter1111/Admin-Deskboard",
+      "imageUrl": "https://opengraph.githubassets.com/1/codecrafter1111/Admin-Deskboard"
+    }
+  ],
+  "extra": [
+    "Open to Junior / Intern / Freelance MERN Developer opportunities"
+  ]
+}

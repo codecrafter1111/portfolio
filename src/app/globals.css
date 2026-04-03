@@ -1,0 +1,139 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark mode styles */
+html.dark,
+html {
+  --bg-primary: #0a0e27;
+  --bg-secondary: #0f1535;
+  --bg-tertiary: #1a1f3a;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --border-primary: #1e293b;
+  --border-hover: #0ea5e9;
+  --card-bg: #0f1535;
+  --card-border: #1e293b;
+  --card-hover-border: #0ea5e9;
+}
+
+/* Light mode styles */
+html.light {
+  --bg-primary: #e0e774;
+  --bg-secondary: #f3f4f6;
+  --bg-tertiary: #eff1f5;
+  --text-primary: #1a202c;
+  --text-secondary: #2d3748;
+  --text-tertiary: #4a5568;
+  --border-primary: #cbd5e1;
+  --border-hover: #1e40af;
+  --card-bg: #ffffff;
+  --card-border: #d1d5db;
+  --card-hover-border: #1e40af;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Card and component styling utilities */
+@layer components {
+  .card-base {
+    @apply rounded-xl bg-gradient-to-br border transition duration-300;
+  }
+
+  html.dark .card-base {
+    @apply from-gray-900/50 to-gray-900/20 border-gray-700 hover:border-cyan-500/50;
+  }
+
+  html.light .card-base {
+    @apply from-white to-slate-50 border-gray-200 hover:border-blue-600;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400;
+  }
+
+  .icon-box {
+    @apply rounded-lg flex items-center justify-center;
+  }
+
+  html.dark .icon-box {
+    @apply bg-gradient-to-br from-cyan-500/20 to-blue-500/20 hover:from-cyan-500/40 hover:to-blue-500/40;
+  }
+
+  html.light .icon-box {
+    @apply bg-gradient-to-br from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100;
+  }
+}
+
+/* Custom scrollbar - Dark */
+html.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: rgba(10, 14, 39, 0.5);
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00d9ff, #0099ff);
+  border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00ffff, #00ccff);
+}
+
+/* Custom scrollbar - Light */
+html.light ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: rgba(243, 244, 246, 0.5);
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #06b6d4, #0284c7);
+  border-radius: 4px;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #22d3ee, #0ea5e9);
+}
+
+/* Smooth focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #00d9ff;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+html.light button:focus-visible,
+html.light a:focus-visible {
+  outline: 2px solid #06b6d4;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
