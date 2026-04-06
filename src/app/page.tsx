@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { AnimatedBackground } from '@/components/AnimatedBackground';
 import { SplashScreen } from '@/components/SplashScreen';
@@ -14,7 +14,7 @@ import { Education } from '@/components/Education';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 
-export default function Home() {
+function HomeContent() {
   const [showSplash, setShowSplash] = useState(true);
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -75,5 +75,13 @@ export default function Home() {
         <Footer />
       </div>
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div className="bg-primary min-h-screen" />}>
+      <HomeContent />
+    </Suspense>
   );
 }

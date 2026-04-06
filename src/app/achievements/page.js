@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import { ArrowLeft, Calendar, Award, CheckCircle } from 'lucide-react';
@@ -74,7 +75,7 @@ const achievementsData = [
     }
 ];
 
-export default function AchievementsDetailPage() {
+function AchievementsDetailContent() {
     const searchParams = useSearchParams();
     const achievementId = searchParams.get('id') ? parseInt(searchParams.get('id')) : 1;
 
@@ -302,5 +303,13 @@ export default function AchievementsDetailPage() {
                 </motion.div>
             </div>
         </div>
+    );
+}
+
+export default function AchievementsDetailPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen bg-primary" />}>
+            <AchievementsDetailContent />
+        </Suspense>
     );
 }

@@ -1,0 +1,13 @@
+# Netlify Build Artifacts
+.next
+node_modules
+.env.local
+.env.*.local
+.git
+.gitignore
+README.md
+.eslintrc*
+eslint.config.mjs
+tsconfig.json
+tsconfig.node.json
+next-env.d.ts
