@@ -2,6 +2,10 @@
   "name": "prabhat-portfolio",
   "version": "1.0.0",
   "description": "Futuristic Portfolio for Prabhat Yadav - MERN Developer",
+  "engines": {
+    "node": ">=20.9.0",
+    "npm": ">=10"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
